@@ -1,0 +1,116 @@
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#background {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 1)), url("media/main_background.jpg");
+    filter: blur(1px);
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Intro*/
+#intro {
+    position: absolute;
+    width: 70vw;
+    text-transform: uppercase;
+    color: rgb(200, 200, 200);
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+#intro h1 {
+    letter-spacing: 5px;
+}
+#intro button {
+    width: 10vw;
+    border-radius: 2.5px;
+    font-size: 100%;
+    text-transform: inherit;
+    color: rgb(100, 100, 100);
+    background-color: rgb(225, 214, 149);
+    border: none;
+    transition: width .25s ease-out, color .25s, background-color .5s;
+}
+#intro button:hover {
+    width: 15vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+}
+#intro button:active {
+    transition: none;
+    width: 10vw;
+    background-color: red;
+}
+
+
+/*Main*/
+#main {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 50vh;
+}
+#one, #two, #three {
+    width: 7vw;
+    margin: 0% 1% 0% 1%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    filter: grayscale(50%);
+    transition: filter .5s;
+    border: none;
+    padding: 0%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.main_images {
+    width: 50vw;
+    height: 100%;
+}
+#one:hover {
+    filter: grayscale(0%) saturate(200%);
+}
+#two:hover {
+    filter: grayscale(0%) saturate(200%);
+}
+#three:hover {
+    filter: grayscale(0%) saturate(200%);
+}
+
+/*Navigation*/
+nav {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin: 1% 0% 1% 0%;
+}
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin: 0%;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: rgb(255, 255, 255);
+    transition: color .25s;
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+nav ul li a:hover {
+    color: rgb(100, 100, 100);
+}

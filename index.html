@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+        <script src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="background"></div>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" title="home page">home</a>
+                </li>
+                <li>
+                    <a href="index.html" title="planets">cool planets</a>
+                </li>
+                <li>
+                    <a href="index.html" title="contact information">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="intro">
+            <h1>Lorem ipsum dolar</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button onclick="show_main()">play</button>
+        </div>
+        <section id="main">
+            <button id="one" onclick="show_intro()">
+                <img class="main_images" src="media/image_one.jpg">
+            </button>
+            <button id="two" onclick="show_intro()">
+                <img class="main_images" src="media/image_two.jpg">
+            </button>
+            <button id="three" onclick="show_intro()">
+                <img class="main_images" src="media/image_three.jpg">
+            </button>
+        </section>
+    </body>
+</html>
